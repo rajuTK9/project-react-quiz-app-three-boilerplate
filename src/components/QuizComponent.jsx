@@ -66,9 +66,11 @@ export default class QuizComponent extends Component {
             <button className="btn nxt" onClick={this.next}>
               Next
             </button>
-            <button className="btn quit" onClick={this.quit}>
-              Quit
-            </button>
+            <Link to="/">
+              <button className="btn quit" onClick={this.quit}>
+                Quit
+              </button>
+            </Link>
             <Link to="/result">
               <button
                 className="btn finish"

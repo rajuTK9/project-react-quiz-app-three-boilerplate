@@ -15,7 +15,7 @@ export default class QuizComponent extends Component {
   evaluate = (e) => {
     this.next();
     this.setState({ attempted: this.state.attempted + 1 });
-    if (questions[this.state.i].answer == e.target.innerText) {
+    if (questions[this.state.i].answer === e.target.innerText) {
       this.setState({ score: this.state.score + 1 });
       alert("Correct Answer");
     } else {
